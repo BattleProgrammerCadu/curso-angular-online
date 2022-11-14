@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DataBindingComponent } from './data-binding/data-binding.component';
-import { HeaderComponent } from './header/header.component';
-import { ContadorComponent } from './contador/contador.component';
-import { DiretivasComponent } from './diretivas/diretivas.component';
-import { ExercicioNgClassComponent } from './exercicio-ng-class/exercicio-ng-class.component';
-import { ExerciciosPipesComponent } from './exercicios-pipes/exercicios-pipes.component';
+import { DataBindingComponent } from './shared/components/data-binding/data-binding.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { ContadorComponent } from './shared/components/contador/contador.component';
+import { DiretivasComponent } from './shared/components/diretivas/diretivas.component';
+import { ExercicioNgClassComponent } from './shared/components/exercicio-ng-class/exercicio-ng-class.component';
+import { ExerciciosPipesComponent } from './shared/components/exercicios-pipes/exercicios-pipes.component';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
 
