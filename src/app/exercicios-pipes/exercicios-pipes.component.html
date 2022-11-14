@@ -1,0 +1,21 @@
+<p>{{filme.titulo | uppercase}}</p>
+<p>{{filme.estrelas | number:'1.1-1'}}</p>
+<p>{{filme.precoAluguel | currency: 'BRL'}}</p>
+<p>{{filme.dataLancamento | date:'full'}}</p>
+
+<hr>
+
+<h1>Exercicio Pipes:</h1>
+<p>Utilizando Pipes, exiba as informações do Array de Compras da seguinte forma:</p>
+
+<ul>
+    <li *ngFor="let produto of compras">
+        <p>Produto: <strong>{{produto.produto | uppercase}}</strong></p>
+        <p>Valor: {{produto.valor | currency: 'BRL'}}</p>
+        <p>Quantidade: {{produto.quantidade}}</p>
+        <p> Peso: {{getPesoFormatado(produto.peso)}}</p>
+        <p>Data: {{produto.data | date:'EEEE, dd \'de\' MMMM \'de\' yyyy \'às\' HH:mm'}} </p>
+        <hr>
+    </li>
+    
+</ul>
