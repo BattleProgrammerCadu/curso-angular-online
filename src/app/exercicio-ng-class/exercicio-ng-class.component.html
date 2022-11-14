@@ -1,0 +1,11 @@
+
+<p [ngClass]="deveSerVerde ? 'verde': 'vermelho'">Testando</p>
+
+<p [ngClass]="{
+    'verde': deveSerVerde,
+    'vermelho': !deveSerVerde
+}">Testando outra vez</p>
+
+<p [class.verde]="deveSerVerde">Testando property binding</p>
+
+<button (click)="tornarVerde()">Tornar Verde</button>

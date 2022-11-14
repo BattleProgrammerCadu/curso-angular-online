@@ -7,6 +7,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { HeaderComponent } from './header/header.component';
 import { ContadorComponent } from './contador/contador.component';
 import { DiretivasComponent } from './diretivas/diretivas.component';
+import { ExercicioNgClassComponent } from './exercicio-ng-class/exercicio-ng-class.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DiretivasComponent } from './diretivas/diretivas.component';
     DataBindingComponent,
     HeaderComponent,
     ContadorComponent,
-    DiretivasComponent
+    DiretivasComponent,
+    ExercicioNgClassComponent
   ],
   imports: [
     BrowserModule,
