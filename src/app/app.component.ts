@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'propriedades-eventos';
+
+  propertyWord = "Parangaricutirimirruaro"
+
+  eventoRecebido($event: any){
+    console.log("fake news recebidas cm sucesso",$event )
+  }
+
+ 
 }

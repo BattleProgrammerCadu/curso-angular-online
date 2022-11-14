@@ -1,0 +1,32 @@
+<h1>Exemplos property binding</h1>
+<input type="text" [value]="initialValue">
+<br><br>
+<img [src]="getImageUrl()" alt="">
+<br>
+<button [disabled]="isDisabled">Clica em mim</button>
+<br>
+<p [attr.aria-label]="isDisabled ? 'Botao desabilitado' : accessibilityText">
+    asdasdasdasd
+</p>
+<br>
+
+<span>Uma palavra: {{palavra}}</span>
+
+<hr>
+
+<h1>Exemplos event binding</h1>
+
+<button (click)="onClick()">Clica aqui vai</button>
+<br>
+<input type="text" [value]="initialValue" (keyup)="digitouAlgo($event)">
+{{initialValue}}
+<br>
+<button (click)="onClickEmitter($event)">
+    Emitir informações
+</button>
+<hr>
+<h1>Exercicio:</h1>
+valorAtual = {{valorAtual}};
+<app-contador
+ [(valor)]="valorAtual"
+ ></app-contador>
